@@ -1,0 +1,5 @@
+vendor/
+.idea/
+composer.lock
+config.json
+uploadLog.log
