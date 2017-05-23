@@ -33,7 +33,7 @@
 
         //taking the sql dump for mobilebackend
         $output = NULL;
-        $commandSqlDump = 'mysqldump -u '.$user.' -p '.$password.' '. $userDbName .' > '.$rootDirectory.'"'. $userDbName .'-"`date +"%d-%m-%Y"`.sql';
+        $commandSqlDump = 'mysqldump -u'.$user.' -p'.$password.' '. $userDbName .' > '.$rootDirectory.'"'. $userDbName .'-"`date +"%d-%m-%Y"`.sql';
         echo "\n" . exec($commandSqlDump, $output);
         $commandGzipDump = 'gzip '.$rootDirectory.'"'. $userDbName .'-"`date +"%d-%m-%Y"`.sql';
         echo "\n" . exec($commandGzipDump, $output);
@@ -41,7 +41,7 @@
 
         //taking the sql dump for mobilebackend	sentinel
         $output = NULL;
-        $commandSqlDump = 'mysqldump -u '.$user.' -p '.$password.' '. $authDbName .' > '.$rootDirectory.'"'. $authDbName.'-"`date +"%d-%m-%Y"`.sql';
+        $commandSqlDump = 'mysqldump -u'.$user.' -p'.$password.' '. $authDbName .' > '.$rootDirectory.'"'. $authDbName.'-"`date +"%d-%m-%Y"`.sql';
         echo "\n" . exec($commandSqlDump, $output);
         $commandGzipDump = 'gzip '.$rootDirectory.'"'. $authDbName .'-"`date +"%d-%m-%Y"`.sql';
         echo "\n" . exec($commandGzipDump, $output);
