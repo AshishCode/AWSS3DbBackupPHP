@@ -39,13 +39,13 @@
         echo "\n" . exec($commandGzipDump, $output);
         echo "\n DB Backup Complete :- " . $userDbName;
 
-        //taking the sql dump for mobilebackend	sentinel
+        /*//taking the sql dump for mobilebackend	sentinel
         $output = NULL;
         $commandSqlDump = 'mysqldump -u'.$user.' -p'.$password.' '. $authDbName .' > '.$rootDirectory.'"'. $authDbName.'-"`date +"%d-%m-%Y"`.sql';
         echo "\n" . exec($commandSqlDump, $output);
         $commandGzipDump = 'gzip '.$rootDirectory.'"'. $authDbName .'-"`date +"%d-%m-%Y"`.sql';
         echo "\n" . exec($commandGzipDump, $output);
-        echo "\n DB Backup Complete :- " . $authDbName;
+        echo "\n DB Backup Complete :- " . $authDbName;*/
 
         echo "\n\n Directory Name :- " . $rootDirectory . " \n\n";
         //iterating through the contents of a app database folder
